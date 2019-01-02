@@ -1,5 +1,0 @@
-{"level":"info","message":"Info message","timestamp":"6:01:43 PM"}
-{"level":"warn","message":"Warning message","timestamp":"6:01:43 PM"}
-{"level":"debug","message":"Debugging info","timestamp":"6:01:43 PM"}
-{"level":"info","message":"Listening on port 1234","timestamp":"6:01:44 PM"}
-{"level":"info","message":"User loged in with success. Login token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzJiNTc1MmNhZjU0MTVkMjhjMzg3NTYiLCJpZCI6IjEyMzQ1Njc4OSIsInVzZXJuYW1lIjoidXNlcjEyMyIsInBhc3N3b3JkIjoiMzIyNTAxNzBhMGRjYTkyZDUzZWM5NjI0ZjMzNmNhMjQiLCJuYW1lIjoiQW5hIiwic2V4IjoiZmVtYWxlIiwiYWdlIjozMCwiY3JlYXRlZEF0IjoiMjAxOS0wMS0wMVQxMjowNDozNC40OThaIiwidXBkYXRlZEF0IjoiMjAxOS0wMS0wMVQxMjowNDozNC40OThaIiwiX192IjowLCJpYXQiOjE1NDYzNDgxOTEsImV4cCI6MTU0NjM1MTc5MX0.iOFtrNSMLUFbHhVvD6w7KX1jSQ1plOXw5RMn7vlntFo","timestamp":"6:39:51 PM"}
