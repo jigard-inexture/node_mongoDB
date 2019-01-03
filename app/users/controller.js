@@ -17,7 +17,7 @@ exports.register = async ( req, res ) => {
         console.log( savedUser );
         res.success( extractObject(
             savedUser,
-            [ "id", "username" ],
+            [ "_id" ],
         ) );
     } catch ( err ) {
         res.send( err );
@@ -30,7 +30,7 @@ exports.edit = async ( req, res ) => {
         const editedUser = await repository.editUser( user, req.body );
         res.success( extractObject(
             editedUser,
-            [ "id", "username" ],
+            [ "_id" ],
         ) );
     } catch ( err ) {
         res.send( err );
@@ -44,7 +44,7 @@ exports.delete = async ( req, res ) => {
         console.log( deletedUser );
         res.success( extractObject(
             deletedUser,
-            [ "id", "username" ],
+            [ "_id" ],
         ) );
     } catch ( err ) {
         console.log( err );

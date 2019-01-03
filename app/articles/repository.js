@@ -12,12 +12,13 @@ const createArticle = async ( user, data ) => {
     return query;
 };
 
-const findArticles = () => Article.find( );
+const findArticles = (user) => Article.find( {authorId: user._id} );
 
 const findDetails = ( id ) => Article.findOne( { _id: id } );
+
 
 module.exports = {
     createArticle,
     findArticles,
-    findDetails,
+    findDetails
 };

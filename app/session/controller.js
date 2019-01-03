@@ -2,10 +2,10 @@ const jwt = require( "jsonwebtoken" );
 const repository = require( "./repository" );
 
 const config = require( "../../config" );
-const logger = require( "../../utilities/logger" );
+//const logger = require( "../../utilities/logger" );
 
 exports.login = async ( req, res ) => {
-    console.log('req.body',req.body);
+
     if ( !req.body.password || !req.body.username ) {
         res.preconditionFailed( "Credentials required" );
         return;
@@ -19,7 +19,7 @@ exports.login = async ( req, res ) => {
         }
 
         const token = jwt.sign( user.toObject(), config.secret, { expiresIn: 3600 } );
-        logger.info( "User loged in with success. Login token", token );
+        //logger.info( "User loged in with success. Login token", token );
         res.json( {
             success: true,
             token,

@@ -24,7 +24,7 @@ exports.delete = ( req, res ) => {
 
 exports.list = async ( req, res ) => {
     try {
-        const articles = await repository.findArticles();
+        const articles = await repository.findArticles(req.user);
         res.success( articles );
     } catch ( err ) {
         res.send( err );
