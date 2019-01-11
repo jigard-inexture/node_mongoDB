@@ -22,9 +22,12 @@ const deleteUser = ( user ) => user.remove();
 
 const findUser = ( id ) => User.findOne( { id } );
 
+const isUser = ( value ) => User.find( { "username": value } );
+
 module.exports = {
     saveUser,
     editUser,
     deleteUser,
     findUser,
+    isUser
 };

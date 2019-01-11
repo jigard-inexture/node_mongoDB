@@ -3,9 +3,11 @@ const logger = require( "../../utilities/logger" );
 const repository = require( "./repository" );
 
 exports.register = async ( req, res ) => {
-    console.log('req',req);
-    const { user } = req;
-
+    //console.log('req',req.body);
+    const { username } = req.body;
+    //console.log('username',username);
+    const user = await repository.isUser( username );
+    //console.log('user',user);
     if ( user ) {
         logger.error( "User already exists" );
         res.preconditionFailed( "existing_user" );
@@ -14,7 +16,7 @@ exports.register = async ( req, res ) => {
 
     try {
         const savedUser = await repository.saveUser( req.body );
-        console.log( savedUser );
+        //console.log( savedUser );
         res.success( extractObject(
             savedUser,
             [ "_id" ],
